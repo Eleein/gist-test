@@ -5,6 +5,7 @@ describe("Gist Github", () => {
     cy.loginToGithub();
     cy.visit("/");
   });
+
   describe("Gist Github: Create Gist", () => {
     it("should create a secret gist by typing in editor, and should then delete the gist", () => {
       const description = "Cypress test";
@@ -31,6 +32,7 @@ describe("Gist Github", () => {
 
       cy.get('.pagehead-actions button[aria-label="Delete this Gist"]').click();
     });
+
     it("should create a secret gist by drag and drop in editor, and should then delete Gist", () => {
       const description = "Another Cypress test";
       const fileName = "people.csv";
