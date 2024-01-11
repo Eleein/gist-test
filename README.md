@@ -1,4 +1,4 @@
-# GIST ASSIGNMENT
+# GIST-TEST
 ## :boom: What is it all about?
 This project contains sample set of E2E test cases for creating and listing gists.
 
@@ -8,7 +8,7 @@ Getting Started
 To get started, clone this repo, and run `npm install` in the root directory.
 
 ```sh
-git clone https://github.com/Eleein/gist_gitHub
+git clone [https://github.com/Eleein/gist_gitHub](https://github.com/Eleein/gist-test)
 cd gist_assignment
 npm install
 ```
