@@ -5,7 +5,7 @@ This project contains sample set of E2E test cases for creating and listing gist
 ## Pre-requirements
 
 It is required to have git, Node.js, and npm installed to clone and run this project.
-You will also need a Github account with a username and a password. And for the API tests a Github token
+You will also need a GitHub account with a username and a password. And for the API tests a Github token
 is required with permissions to read and write on Gist. 
 
 A final requirement, for the use of sensitive data you should create a cypress.env.json
@@ -18,7 +18,7 @@ Getting Started
 To get started, clone this repo, and run `npm install` in the root directory.
 
 ```sh
-git clone [https://github.com/Eleein/gist_gitHub](https://github.com/Eleein/gist-test)
+git clone https://github.com/Eleein/gist_gitHub
 cd gist_assignment
 npm install
 ```

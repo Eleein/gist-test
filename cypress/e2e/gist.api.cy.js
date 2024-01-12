@@ -1,10 +1,11 @@
 describe("Gist API", () => {
+  const apiUrl = "https://api.github.com/gists";
   const token = Cypress.env("token");
-  const url = "https://api.github.com/gists";
+  const authorization = `bearer ${token}`;
 
   it("List gists for anonymous user", () => {
     cy.request({
-      url: url,
+      url: apiUrl,
       method: "GET",
     }).then((res) => {
       expect(res.status).to.equal(200);
@@ -13,10 +14,9 @@ describe("Gist API", () => {
   });
 
   it("List gists for authenticated user", () => {
-    const authorization = `bearer ${token}`;
     const options = {
       method: "GET",
-      url: url,
+      url: apiUrl,
       headers: {
         authorization,
       },
@@ -29,7 +29,6 @@ describe("Gist API", () => {
   });
 
   it("Creates gist via POST request", () => {
-    const authorization = `bearer ${token}`;
     const body = {
       description: "Example of a gist",
       public: false,
@@ -41,7 +40,7 @@ describe("Gist API", () => {
     };
     const options = {
       method: "POST",
-      url: url,
+      url: apiUrl,
       headers: {
         authorization,
       },
